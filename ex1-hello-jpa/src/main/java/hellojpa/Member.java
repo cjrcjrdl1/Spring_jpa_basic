@@ -1,9 +1,6 @@
 package hellojpa;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
 public class Member {
@@ -45,5 +42,14 @@ public class Member {
 
     public void setTeam(Team team) {
         this.team = team;
+    }
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", team=" + team +
+                '}';
     }
 }

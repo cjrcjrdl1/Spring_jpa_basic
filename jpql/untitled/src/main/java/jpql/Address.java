@@ -1,4 +1,4 @@
-package hellojpa.jpql;
+package jpql;
 
 import javax.persistence.Embeddable;
 
